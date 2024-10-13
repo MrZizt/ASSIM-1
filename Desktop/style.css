@@ -6,12 +6,12 @@ body {
     background-color: rgb(252, 255, 232);
 }
 
-/* Header */
+/* Header Styling */
 header {
     height: auto; 
     padding: 40px;
     background: linear-gradient(to top, rgb(255, 222, 124), rgba(255, 255, 255, 0) 30%),
-    url('https://preschooleducation.com/wp-content/uploads/2023/10/21-Back-to-School-Songs-for-Preschoolers.webp'); 
+    url('https://preschooleducation.com/wp-content/uploads/2023/10/21-Back-to-School-Songs-for-Preschoolers.webp'); /* Gradient background with an image */
     background-size: cover; 
     background-position: center 40%; 
     display: flex;
@@ -20,19 +20,20 @@ header {
     text-align: center;
     box-shadow: 0 4px 2px -2px rgb(255, 123, 0);
 }
-
+/* Logo and Title Container */
 .logo-title {
     display: flex;
     align-items: center; 
     justify-content: center; 
 }
-
+/* Logo Styling */
 .logo {
     width: 80px;
     height: 80px;
     border-radius: 10px;
 }
-
+/* Navigation Styling */
+/* Styling for the navigation bar */
 header h1 {
     font-size: 2.5em; 
     color: rgb(255, 221, 0);
@@ -57,13 +58,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(183, 66, 8);
+    color: whitesmoke;
     font-size: 1.2em;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: lightyellow;
+    color: rgb(236, 131, 51);
+    background-color: #ecebc6;
+    font-size: 23px;
+    
 }
 
 .nav-box li {
@@ -72,12 +76,8 @@ nav ul li a:hover {
     border-radius: 10px;
     text-decoration: solid;
     font-weight: bolder;
+    margin:2% ;
 }
-
-.nav-box li:hover {
-    background-color: gold;
-}
-
 .pagelink li {
     display: inline-block;
     line-height: 50px; 
@@ -88,69 +88,86 @@ main {
     padding: 10px; 
 }
 
-h2 {
-    color: #ff5722;
-    padding-bottom: 25px;
-    font-size: 1.5em; 
-}
-
+/* Sections Styling */
+/* Styling different sections */
 #welcome, #schedule, #gallery, #resources, #teacher {
     text-align: center;
 }
 
 #welcome h2, #schedule h2, #gallery h2, #resources h2, #teacher h2 {
     padding-top: 20px;
+    padding-bottom: 25px;
     margin-top: 50px;
     width: 80%; 
     max-width: 800px; 
     border-radius: 100px;
     margin: 50px auto;
-    color: rgb(157, 145, 3);
+    color: rgba(219, 104, 11, 0.74);
     font-size: 30px;
     background-image: linear-gradient(144deg, #ffe600, #eaff00 50%, #ffe600);
     box-shadow: rgba(71, 5, 145, 0.2) 0 15px 30px -5px;
 }
 
-#welcome p, #resources p {
+#welcome p, #resources p, #teacher p {
     font-size: 25px;
     text-align: center;
+    margin: 4% 5% 4% 5%;
+
 }
 
+
+/* Table Styling */
+/* Styling for the table */
 #schedule .table-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 table {
-    border: 5px solid black;
-    border-radius: 15px;
+    
     overflow: hidden;
     width: 100%; 
-    max-width: flex; 
+    max-width: 100%;
     height: auto;
     border-collapse: separate;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    margin: 40px;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
 }
 
 th {
     background-color: rgb(255, 98, 0);
-    text-align: center;
-    font-size: 18px;
+    color: white;
 }
 
-tr {
+tr:nth-child(even) {
     background-color: rgb(255, 136, 0);
-    text-align: center;
-    font-size: 18px;
 }
 
-td {
+tr:nth-child(odd) {
     background-color: rgb(235, 233, 159);
-    text-align: center;
-    font-size: 14px;
 }
-
+/* Media Query for Small Screens */
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 9px; 
+        width: 80%; 
+    
+    }
+    th, td {
+        padding: 6px; 
+        font-size: 9px; 
+    }
+}
+/* Gallery Styling */
+/* Styling for the image gallery */
 .gallery {
     display: flex;
     justify-content: space-around;
@@ -164,8 +181,11 @@ td {
     height: auto; 
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top:2% ;
+    margin-bottom:2% ;
 }
-
+/* Footer Styling */
+/* Styling for the footer */
 footer {
     background-image: linear-gradient(144deg, #dc8b3a, #ffd18d 50%, #dc8b3a);
     text-align: center;
@@ -173,18 +193,66 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+    list-style: none;
 }
 
-#resources{
-li{
-    color: #e69214;
+/* Footer Links Styling */
+/* Styling for links in the footer */
+footer a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #f39c12; 
+    color: white; 
+    text-decoration: none; 
+    margin: 5px; 
+    border-radius: 10px; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
+    
 }
-a{
-color: #9d7600;
 
+footer a:hover {
+    background-color: #e67e22; 
+}
+
+/*Styling resources*/
+#resources
+ul {
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    list-style-type: none; 
+}
+
+ul li {
+    margin: 10px; 
+}
+
+ul a {
+    display: inline-block; 
+    padding: 15px 20px; 
+    background-color: #f39c12; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 10px; 
+    transition: background-color 0.3s; 
+}
+
+ul a:hover {
+    background-color: #e67e22;
+     font-size:20px ;
+}
+/* Media Query for Responsive Design */
+/* Adjust styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    ul li {
+        margin: 5px 0; }
 }
 
 
-
-}
 
