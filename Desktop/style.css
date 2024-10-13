@@ -187,6 +187,8 @@ tr:nth-child(odd) {
 /* Footer Styling */
 /* Styling for the footer */
 footer {
+    display: flex;
+    justify-content: center;
     background-image: linear-gradient(144deg, #dc8b3a, #ffd18d 50%, #dc8b3a);
     text-align: center;
     padding: 10px 0;
