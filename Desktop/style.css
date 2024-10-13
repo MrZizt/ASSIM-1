@@ -1,0 +1,190 @@
+/* General styling */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 255, 232);
+}
+
+/* Header */
+header {
+    height: auto; 
+    padding: 40px;
+    background: linear-gradient(to top, rgb(255, 222, 124), rgba(255, 255, 255, 0) 30%),
+    url('https://preschooleducation.com/wp-content/uploads/2023/10/21-Back-to-School-Songs-for-Preschoolers.webp'); 
+    background-size: cover; 
+    background-position: center 40%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px rgb(255, 123, 0);
+}
+
+.logo-title {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2.5em; 
+    color: rgb(255, 221, 0);
+}
+
+nav {
+    margin: 20px 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(183, 66, 8);
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: lightyellow;
+}
+
+.nav-box li {
+    background-image: linear-gradient(144deg, #e7c45a, #fffaa5 50%, #e7c45a);
+    line-height: 50px; 
+    border-radius: 10px;
+    text-decoration: solid;
+    font-weight: bolder;
+}
+
+.nav-box li:hover {
+    background-color: gold;
+}
+
+.pagelink li {
+    display: inline-block;
+    line-height: 50px; 
+    
+}
+
+main {
+    padding: 10px; 
+}
+
+h2 {
+    color: #ff5722;
+    padding-bottom: 25px;
+    font-size: 1.5em; 
+}
+
+#welcome, #schedule, #gallery, #resources, #teacher {
+    text-align: center;
+}
+
+#welcome h2, #schedule h2, #gallery h2, #resources h2, #teacher h2 {
+    padding-top: 20px;
+    margin-top: 50px;
+    width: 80%; 
+    max-width: 800px; 
+    border-radius: 100px;
+    margin: 50px auto;
+    color: rgb(157, 145, 3);
+    font-size: 30px;
+    background-image: linear-gradient(144deg, #ffe600, #eaff00 50%, #ffe600);
+    box-shadow: rgba(71, 5, 145, 0.2) 0 15px 30px -5px;
+}
+
+#welcome p, #resources p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#schedule .table-container {
+    display: flex;
+    justify-content: center; 
+}
+
+table {
+    border: 5px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%; 
+    max-width: flex; 
+    height: auto;
+    border-collapse: separate;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 40px;
+}
+
+th {
+    background-color: rgb(255, 98, 0);
+    text-align: center;
+    font-size: 18px;
+}
+
+tr {
+    background-color: rgb(255, 136, 0);
+    text-align: center;
+    font-size: 18px;
+}
+
+td {
+    background-color: rgb(235, 233, 159);
+    text-align: center;
+    font-size: 14px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+
+.gallery img {
+    width: 100%; 
+    max-width: 250px; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-image: linear-gradient(144deg, #dc8b3a, #ffd18d 50%, #dc8b3a);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#resources{
+li{
+    color: #e69214;
+}
+a{
+color: #9d7600;
+
+}
+
+
+
+}
+
